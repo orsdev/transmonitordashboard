@@ -1,3 +1,135 @@
+.navbar {
+  background: #fff;
+  padding: 15px 0;
+  padding-right: 70px;
+  padding-left: 42px;
+  display: flex;
+  align-items: center;
+}
+.navbar-logo {
+  font-weight: 900;
+  font-size: 2.4rem;
+  color: #1875f0;
+}
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  font-family: "Segoe UI Regular";
+}
+.navbar-search-form {
+  width: 130px;
+}
+.navbar-search-form form {
+  display: flex;
+  align-items: center;
+}
+.navbar-search-form form i {
+  color: #979797;
+  width: 30%;
+  font-size: 1.5rem;
+}
+.navbar-search-form form input {
+  width: 70%;
+  border: none;
+  padding: 5px;
+  font-size: 1.2rem;
+  color: #979797;
+}
+.navbar-link {
+  width: calc(100% - 310px);
+  padding-right: 50px;
+  text-align: right;
+}
+.navbar-link a {
+  display: inline-block;
+  color: #647787;
+  font-size: 1.4rem;
+  width: 60px;
+}
+.navbar-link a[href="#bell"] {
+  position: relative;
+}
+.navbar-link a[href="#bell"] span {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: inline-block;
+  background: #1875f0;
+  color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.navbar-user {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  color: #647787;
+}
+.navbar-user span {
+  display: inline-block;
+  padding: 0 10px;
+  text-align: right;
+  width: 100%;
+}
+.navbar-user img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: block;
+    padding-left: 0;
+  }
+  .navbar-search-form {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .navbar-search-form form i {
+    width: 30px;
+  }
+  .navbar-link {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: left;
+    width: 100%;
+  }
+  .navbar-link a {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .navbar-link a[href="#bell"] {
+    width: 15px;
+  }
+  .navbar-user {
+    width: 150px;
+  }
+  .navbar-user span {
+    padding: 0;
+  }
+  .navbar-user span:first-child {
+    padding-right: 15px;
+  }
+  .navbar-user span:last-child {
+    text-align: left;
+  }
+}
+@media (max-width: 320px) {
+  .navbar-logo {
+    font-size: 1.8rem;
+  }
+}
 @font-face {
   font-family: "Segoe UI Regular";
   font-style: normal;

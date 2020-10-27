@@ -1,0 +1,161 @@
+.navbar {
+  background: $white;
+  padding: 15px 0;
+  padding-right: 70px;
+  padding-left: 42px;
+  display: flex;
+  align-items: center;
+
+  &-logo {
+    font-weight: 900;
+    font-size: 2.4rem;
+    color: $blue;
+  }
+
+  &-collapse {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    font-family: 'Segoe UI Regular';
+  }
+
+  &-search-form {
+    width: 130px;
+
+    form {
+      display: flex;
+      align-items: center;
+
+      i {
+        color: $grey;
+        width: 30%;
+        font-size: 1.5rem;
+      }
+
+      input {
+        width: 70%;
+        border: none;
+        padding: 5px;
+        font-size: 1.2rem;
+        color: $grey;
+      }
+    }
+  }
+
+  &-link {
+    width: calc(100% - 310px);
+    padding-right: 50px;
+    text-align: right;
+
+    a {
+      display: inline-block;
+      color: $teal;
+      font-size: 1.4rem;
+      width: 60px;
+
+      &[href='#bell'] {
+        position: relative;
+
+        span {
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          display: inline-block;
+          background: $blue;
+          color: white;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &-user {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    color: $teal;
+
+    span {
+      display: inline-block;
+      padding: 0 10px;
+      text-align: right;
+      width: 100%;
+    }
+
+    img {
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    &-collapse {
+      display: block;
+      padding-left: 0;
+    }
+
+    &-search-form {
+      width: 100%;
+      margin-bottom: 15px;
+      margin-top: 15px;
+
+      form {
+        i {
+          width: 30px;
+        }
+      }
+    }
+
+    &-link {
+      margin-bottom: 15px;
+      margin-top: 15px;
+      text-align: left;
+      width: 100%;
+
+      a {
+        width: 100%;
+        margin: 5px 0;
+
+        &[href='#bell'] {
+          width: 15px;
+        }
+      }
+    }
+
+    &-user {
+      width: 150px;
+
+      span {
+        padding: 0;
+
+        &:first-child {
+          padding-right: 15px;
+        }
+
+        &:last-child {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar {
+    &-logo {
+      font-size: 1.8rem;
+    }
+  }
+}
