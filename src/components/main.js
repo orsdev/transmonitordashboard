@@ -5,6 +5,7 @@ import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
 } from '@ant-design/icons';
+import Stats from './stats';
 
 const { Header, Content } = Layout;
 
@@ -41,7 +42,7 @@ function Main() {
               padding: 24
             }}
           >
-            Content
+            <Stats />
           </Content>
         </Layout>
       </Layout>

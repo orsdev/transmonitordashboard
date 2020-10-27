@@ -1,0 +1,45 @@
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 225px));
+  gap: 10px;
+
+  &-card {
+    display: flex;
+    align-items: center;
+    background: $white;
+    border: 1px solid #eef8fd;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 18px;
+
+    div {
+      width: 70%;
+
+      h6 {
+        font-size: 1.2rem;
+        color: #787c90;
+      }
+
+      h5 {
+        font-size: 1.8rem;
+        color: $black;
+      }
+    }
+
+    img {
+      width: 30%;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .stats {
+    grid-template-columns: 300px;
+  }
+}
+
+@media (max-width: 460px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
