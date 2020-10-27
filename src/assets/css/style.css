@@ -130,6 +130,69 @@
     font-size: 1.8rem;
   }
 }
+.ant-layout-sider {
+  background: #fff;
+  padding-top: 60px;
+  margin-top: 8px;
+}
+.ant-layout-sider ul {
+  font-family: "Segoe UI Regular";
+  margin: 0;
+  padding: 0;
+  margin-top: 14px;
+  list-style: none;
+}
+.ant-layout-sider ul li {
+  color: #647787;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  padding-left: 31px;
+  cursor: pointer;
+}
+.ant-layout-sider ul li:hover {
+  opacity: 0.7;
+}
+.ant-layout-sider ul li.active {
+  background: #e5e5e5;
+  border-left: 4px solid #1875f0;
+}
+.ant-layout-sider ul li img {
+  margin-right: 14.5px;
+}
+.ant-layout-sider h5 {
+  font-family: "Segoe UI Regular";
+  color: #647787;
+  padding-left: 31px;
+}
+.ant-layout-sider-invoice {
+  width: 163px;
+  height: 33px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.ant-layout-sider-main {
+  margin-top: 14px;
+}
+.ant-layout-sider-payments, .ant-layout-sider-orders {
+  margin-top: 30px;
+}
+
+.ant-layout-header {
+  background: transparent;
+}
+.ant-layout-header svg {
+  width: 40px;
+  height: 40px;
+}
+
 @font-face {
   font-family: "Segoe UI Regular";
   font-style: normal;
