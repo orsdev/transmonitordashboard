@@ -1,7 +1,7 @@
 import React from 'react';
 import Avatar from '../assets/images/user.png';
 
-function Header() {
+function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <a className="navbar-logo text-decoration-none" href="#home">TransMonitor</a>
@@ -36,4 +36,4 @@ function Header() {
   )
 }
 
-export default Header;
+export default Navbar;
