@@ -1,0 +1,136 @@
+.payments {
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+
+    &-showing {
+      display: flex;
+      align-items: center;
+      width: 273px;
+
+      h4 {
+        &:first-child {
+          width: 30%;
+        }
+
+        &:last-child {
+          width: 50%;
+        }
+      }
+
+      .form-group {
+        width: 20%;
+        padding: 0;
+        margin: 0;
+
+        select {
+          border: none;
+          color: $blue;
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    &-searchForm {
+      width: 300px;
+
+      form {
+        display: flex;
+        align-items: center;
+        border-bottom: 0.5px solid #787878;
+        margin-left: 20px;
+
+        i {
+          color: $grey;
+          font-size: 1.5rem;
+          width: 25px;
+        }
+
+        input {
+          width: calc(100% - 25px);
+          border: none;
+          background: transparent;
+          padding: 5px;
+          font-size: 1.1rem;
+
+          &:focus {
+            outline: none;
+            border-bottom: 0.2px solid #787878;
+          }
+        }
+      }
+    }
+
+    &-status {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: calc(100% - 593px);
+
+      .form-group {
+        padding: 0;
+        margin: 0;
+
+        select {
+          color: $black;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1130px) {
+  .payments {
+    &-header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      &-searchForm {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        form {
+          margin-left: 0;
+        }
+      }
+
+      &-status {
+        width: 200px;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .payments {
+    &-header {
+      &-showing {
+        width: 90%;
+
+        .form-group {
+          width: 55px;
+        }
+      }
+
+      &-searchForm {
+        width: 90%;
+      }
+
+      &-status {
+        width: 90%;
+      }
+    }
+  }
+}
