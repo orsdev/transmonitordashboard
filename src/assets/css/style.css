@@ -220,6 +220,12 @@
   bottom: 70px;
 }
 
+@media (max-width: 700px) {
+  .ant-layout-header svg {
+    width: 30px;
+    height: 30px;
+  }
+}
 .stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(226px, 229px));
