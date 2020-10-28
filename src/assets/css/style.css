@@ -467,6 +467,11 @@
   color: white;
 }
 
+@media (max-width: 830px) {
+  .table-entries {
+    top: 0;
+  }
+}
 .ant-col:first-child {
   margin-bottom: 10px;
 }

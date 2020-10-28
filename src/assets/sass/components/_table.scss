@@ -118,3 +118,11 @@
   background: #1875f0;
   color: white;
 }
+
+@media (max-width: 830px) {
+  .table {
+    &-entries {
+      top: 0;
+    }
+  }
+}
