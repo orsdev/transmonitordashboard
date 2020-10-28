@@ -20,3 +20,11 @@
   border-left: 3px solid #1890ff;
   border-right: none;
 }
+
+@media (max-width: 700px) {
+  .main {
+    &-container {
+      padding-right: 42px;
+    }
+  }
+}

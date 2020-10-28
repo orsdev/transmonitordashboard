@@ -20,6 +20,11 @@
   border-right: none;
 }
 
+@media (max-width: 700px) {
+  .main-container {
+    padding-right: 42px;
+  }
+}
 .navbar {
   background: #fff;
   padding: 15px 0;
@@ -145,6 +150,11 @@
   }
   .navbar-user span:last-child {
     text-align: left;
+  }
+}
+@media (max-width: 700px) {
+  .navbar {
+    padding-right: 42px;
   }
 }
 @media (max-width: 320px) {
