@@ -472,10 +472,60 @@
     top: 0;
   }
 }
-.ant-col:first-child {
+.chart .ant-col:first-child {
   margin-bottom: 10px;
 }
+.chart .ant-row {
+  margin: 0 !important;
+}
+.chart-header {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 20px 5px;
+  width: 100%;
+}
+.chart-header-date {
+  width: 180px;
+}
+.chart-header-date h5 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.chart-header-year {
+  width: calc(100% - 270px);
+  text-align: right;
+}
+.chart-header-year .ant-picker {
+  width: 138px;
+  border: 1px solid #dde0e3;
+  border-radius: 4.25px;
+}
+.chart-header-year .ant-picker-suffix {
+  display: none;
+}
+.chart-header-buttons {
+  width: 90px;
+  text-align: center;
+}
+.chart-header-buttons .btn {
+  width: 25px;
+  background: #cccfd4;
+  padding: 2px 5px;
+}
+.chart-header-buttons .btn:first-child {
+  margin-right: 5px;
+}
+.chart-header-buttons .btn i {
+  font-size: 1.7rem;
+  color: #939599;
+}
 
+.second-row {
+  height: 100%;
+}
 .second-row .ant-col {
   background-color: #fff;
 }
@@ -505,6 +555,29 @@
   color: #27ae60;
 }
 
+.line-chart {
+  background: white;
+}
+
+@media (max-width: 1200px) {
+  .chart-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .chart-header-date {
+    width: 100%;
+  }
+  .chart-header-year {
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  .chart-header-buttons {
+    text-align: left;
+    width: 100%;
+  }
+}
 @font-face {
   font-family: "Segoe UI Regular";
   font-style: normal;
