@@ -1,7 +1,10 @@
 @import './includes/colors';
+@import './includes/utils';
 @import './components/navbar';
 @import './components/sidebar';
 @import './components/stats';
+@import './components/payments';
+@import './components/table';
 
 @font-face {
   font-family: 'Segoe UI Regular';

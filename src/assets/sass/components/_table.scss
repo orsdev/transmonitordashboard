@@ -1,0 +1,114 @@
+.table {
+  thead {
+    background: #eaeef0 !important;
+
+    th {
+      color: #717f91;
+      font-size: 1.4rem;
+    }
+  }
+
+  td {
+    font-size: 1.4rem;
+  }
+
+  tbody {
+    color: #414042;
+
+    h6 {
+      color: #414042;
+      font-size: 1.4rem;
+    }
+
+    h5 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      background: #7f8fa4;
+      width: 36px;
+      height: 36px;
+      color: $white;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+  }
+
+  &-entries {
+    position: relative;
+    top: -40px;
+    h5 {
+      font-size: 1.3rem;
+    }
+  }
+
+  .status-btn {
+    background: transparent;
+    width: 125px;
+    height: 33px;
+    font-size: 1.3rem;
+    border: 1px solid #cccfd4;
+    box-sizing: border-box;
+    border-radius: 30px;
+  }
+
+  .status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  .pending-dot {
+    background: #ebc315;
+  }
+
+  .pending-btn {
+    color: #ebc315;
+  }
+
+  .reconcilled-dot {
+    background: #27ae60;
+  }
+
+  .reconcilled-btn {
+    color: #27ae60;
+  }
+
+  .default-dot {
+    background: #c4c4c4;
+  }
+
+  .default-btn {
+    color: #999898;
+  }
+}
+
+.ant-pagination-prev,
+.ant-pagination-next {
+  border: 1px solid #ced0da;
+  border-radius: 2px;
+}
+
+.ant-pagination-prev {
+  margin: 0;
+  padding: 0;
+}
+
+.ant-pagination-item {
+  margin: 0;
+  padding: 0;
+}
+
+.ant-pagination-item-active {
+  background: #1875f0;
+  color: white;
+}

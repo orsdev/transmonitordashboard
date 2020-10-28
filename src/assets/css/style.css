@@ -1,3 +1,7 @@
+.main {
+  font-family: "Segoe UI Regular";
+}
+
 .navbar {
   background: #fff;
   padding: 15px 0;
@@ -232,6 +236,209 @@
     grid-template-columns: 1fr;
   }
 }
+.payments h2 {
+  font-size: 3.6rem;
+}
+.payments h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.payments-header {
+  display: flex;
+  align-items: center;
+}
+.payments-header-showing {
+  display: flex;
+  align-items: center;
+  width: 273px;
+}
+.payments-header-showing h4:first-child {
+  width: 30%;
+}
+.payments-header-showing h4:last-child {
+  width: 50%;
+}
+.payments-header-showing .form-group {
+  width: 20%;
+  padding: 0;
+  margin: 0;
+}
+.payments-header-showing .form-group select {
+  border: none;
+  color: #1875f0;
+  font-size: 1.3rem;
+}
+.payments-header-searchForm {
+  width: 300px;
+}
+.payments-header-searchForm form {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid #787878;
+  margin-left: 20px;
+}
+.payments-header-searchForm form i {
+  color: #979797;
+  font-size: 1.5rem;
+  width: 25px;
+}
+.payments-header-searchForm form input {
+  width: calc(100% - 25px);
+  border: none;
+  background: transparent;
+  padding: 5px;
+  font-size: 1.1rem;
+}
+.payments-header-searchForm form input:focus {
+  outline: none;
+  border-bottom: 0.2px solid #787878;
+}
+.payments-header-status {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: calc(100% - 593px);
+}
+.payments-header-status .form-group {
+  padding: 0;
+  margin: 0;
+}
+.payments-header-status .form-group select {
+  color: #000;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 1130px) {
+  .payments-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .payments-header-searchForm {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .payments-header-searchForm form {
+    margin-left: 0;
+  }
+  .payments-header-status {
+    width: 200px;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 460px) {
+  .payments-header-showing {
+    width: 90%;
+  }
+  .payments-header-showing .form-group {
+    width: 55px;
+  }
+  .payments-header-searchForm {
+    width: 90%;
+  }
+  .payments-header-status {
+    width: 90%;
+  }
+}
+.table thead {
+  background: #eaeef0 !important;
+}
+.table thead th {
+  color: #717f91;
+  font-size: 1.4rem;
+}
+.table td {
+  font-size: 1.4rem;
+}
+.table tbody {
+  color: #414042;
+}
+.table tbody h6 {
+  color: #414042;
+  font-size: 1.4rem;
+}
+.table tbody h5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  background: #7f8fa4;
+  width: 36px;
+  height: 36px;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.table-entries {
+  position: relative;
+  top: -40px;
+}
+.table-entries h5 {
+  font-size: 1.3rem;
+}
+.table .status-btn {
+  background: transparent;
+  width: 125px;
+  height: 33px;
+  font-size: 1.3rem;
+  border: 1px solid #cccfd4;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+.table .status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 8px;
+}
+.table .pending-dot {
+  background: #ebc315;
+}
+.table .pending-btn {
+  color: #ebc315;
+}
+.table .reconcilled-dot {
+  background: #27ae60;
+}
+.table .reconcilled-btn {
+  color: #27ae60;
+}
+.table .default-dot {
+  background: #c4c4c4;
+}
+.table .default-btn {
+  color: #999898;
+}
+
+.ant-pagination-prev,
+.ant-pagination-next {
+  border: 1px solid #ced0da;
+  border-radius: 2px;
+}
+
+.ant-pagination-prev {
+  margin: 0;
+  padding: 0;
+}
+
+.ant-pagination-item {
+  margin: 0;
+  padding: 0;
+}
+
+.ant-pagination-item-active {
+  background: #1875f0;
+  color: white;
+}
+
 @font-face {
   font-family: "Segoe UI Regular";
   font-style: normal;
