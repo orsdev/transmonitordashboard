@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Menu } from 'antd';
+import { Layout, Menu, Divider } from 'antd';
 import Overview from '../assets/images/icons/overview.png';
 import Reconcilled from '../assets/images/icons/reconcilled-payment.png';
 import AllPayment from '../assets/images/icons/all-payments.png';
@@ -22,7 +22,7 @@ function Sidebar({ collapsed }) {
       collapsed={collapsed}
       width="250px"
       style={{
-        minHeight: '100%'
+        minHeight: '100%',
       }}>
       <button className="btn btn-lg btn-success ant-layout-sider-invoice ml-5">
         GENERATE INVOICE
@@ -77,6 +77,7 @@ function Sidebar({ collapsed }) {
           Merchant Profile
         </Menu.Item>
       </Menu>
+      <Divider />
     </Sider>
   );
 }
