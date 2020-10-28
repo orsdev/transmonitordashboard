@@ -6,6 +6,7 @@ import {
   MenuFoldOutlined,
 } from '@ant-design/icons';
 import Stats from './stats';
+import Payments from './payments';
 
 const { Header, Content } = Layout;
 
@@ -19,33 +20,35 @@ function Main() {
   }, []);
 
 
-
   function toggle() {
     setCollapsed(!collapsed);
   };
 
   return (
     <>
-      <Layout>
-        <Sidebar collapsed={collapsed} />
-        <Layout className="site-layout">
-          <Header className="site-layout-background" style={{ padding: 0 }}>
-            {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
-              className: 'trigger',
-              onClick: toggle,
-            })}
-          </Header>
-          <Content
-            className="site-layout-background"
-            style={{
-              margin: '24px 16px',
-              padding: 24
-            }}
-          >
-            <Stats />
-          </Content>
+      <main className="main">
+        <Layout>
+          <Sidebar collapsed={collapsed} />
+          <Layout className="site-layout">
+            <Header className="site-layout-background" style={{ padding: 0 }}>
+              {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
+                className: 'trigger',
+                onClick: toggle,
+              })}
+            </Header>
+            <Content
+              className="site-layout-background"
+              style={{
+                margin: '24px 16px',
+                padding: 24
+              }}
+            >
+              <Stats />
+              <Payments />
+            </Content>
+          </Layout>
         </Layout>
-      </Layout>
+      </main>
     </>
   )
 }
