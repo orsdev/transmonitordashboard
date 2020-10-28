@@ -464,7 +464,7 @@
 
 .ant-pagination-item-active {
   background: #1875f0;
-  color: white;
+  color: #fff;
 }
 
 @media (max-width: 830px) {
