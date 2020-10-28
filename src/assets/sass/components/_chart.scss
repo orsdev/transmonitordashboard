@@ -1,0 +1,42 @@
+.ant-col {
+  &:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+.second-row {
+  .ant-col {
+    background-color: $white;
+
+    h5 {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+
+      li {
+        font-size: 1.4rem;
+        padding: 6px 0;
+
+        span {
+          font-weight: bold;
+          margin-left: 2px;
+        }
+
+        .blue {
+          color: $blue;
+        }
+        .yellow {
+          color: #fdc203;
+        }
+
+        .green {
+          color: $green;
+        }
+      }
+    }
+  }
+}

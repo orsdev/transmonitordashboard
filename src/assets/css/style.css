@@ -444,6 +444,39 @@
   color: white;
 }
 
+.ant-col:first-child {
+  margin-bottom: 10px;
+}
+
+.second-row .ant-col {
+  background-color: #fff;
+}
+.second-row .ant-col h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.second-row .ant-col ul {
+  list-style: none;
+  margin: 0;
+}
+.second-row .ant-col ul li {
+  font-size: 1.4rem;
+  padding: 6px 0;
+}
+.second-row .ant-col ul li span {
+  font-weight: bold;
+  margin-left: 2px;
+}
+.second-row .ant-col ul li .blue {
+  color: #1875f0;
+}
+.second-row .ant-col ul li .yellow {
+  color: #fdc203;
+}
+.second-row .ant-col ul li .green {
+  color: #27ae60;
+}
+
 @font-face {
   font-family: "Segoe UI Regular";
   font-style: normal;

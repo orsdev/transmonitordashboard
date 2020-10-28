@@ -7,6 +7,7 @@ import {
 } from '@ant-design/icons';
 import Stats from './stats';
 import Payments from './payments';
+import Chart from './chart';
 
 const { Header, Content } = Layout;
 
@@ -44,6 +45,7 @@ function Main() {
               }}
             >
               <Stats />
+              <Chart />
               <Payments />
             </Content>
           </Layout>
