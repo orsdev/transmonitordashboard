@@ -1,5 +1,23 @@
 .main {
   font-family: "Segoe UI Regular";
+  background: #ebe8e8;
+}
+.main-container {
+  padding-right: 70px;
+}
+
+.ant-layout {
+  background-color: transparent;
+}
+
+.menu-item::after,
+.ant-menu-inline .ant-menu-item::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-left: 3px solid #1890ff;
+  border-right: none;
 }
 
 .navbar {
@@ -197,9 +215,14 @@
   height: 40px;
 }
 
+.ant-divider-horizontal {
+  position: absolute;
+  bottom: 70px;
+}
+
 .stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(225px, 225px));
+  grid-template-columns: repeat(auto-fit, minmax(226px, 229px));
   gap: 10px;
 }
 .stats-card {
