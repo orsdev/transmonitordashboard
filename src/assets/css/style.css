@@ -372,6 +372,11 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+.table tbody .fa {
+  color: #aeafb3;
+  font-size: 2.5rem;
+  padding-left: 25px;
+}
 .table-entries {
   position: relative;
   top: -40px;
